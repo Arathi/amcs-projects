@@ -1,0 +1,35 @@
+{
+  "name": "@amcs/curseforge-cli",
+  "private": true,
+  "version": "0.0.240920-dev",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.umd.cjs",
+  "module": "./dist/index.js",
+  "exports": {
+    "types": "./index.d.ts",
+    "import": "./dist/index.js",
+    "require": "./dist/index.umd.cjs"
+  },
+  "bin": {
+    "curseforge": "curseforge"
+  },
+  "scripts": {
+    "build": "tsc && vite build",
+    "curseforge": "tsx ./src/index.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^20.16.5",
+    "tsx": "^4.19.1",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.10"
+  },
+  "dependencies": {
+    "@amcs/curseforge-api": "workspace:^",
+    "commander": "^12.1.0",
+    "dayjs": "^1.11.13",
+    "table": "^6.8.2"
+  }
+}

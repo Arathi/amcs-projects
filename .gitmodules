@@ -1,0 +1,3 @@
+[submodule "packages/curseforge-api"]
+	path = packages/curseforge-api
+	url = https://github.com/Arathi/amcs-curseforge-api.git

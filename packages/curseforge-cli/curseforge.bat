@@ -1,0 +1,1 @@
+@tsx ./src/index.ts %*
